@@ -1,4 +1,5 @@
 // components
+import { Brands } from "@/components/Brands";
 import { Hero } from "@/components/Hero";
 
 // implement lenis smooth scroll
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <ReactLenis root>
         <Hero />
+        <Brands />
         {/* temporaty div  */}
         <div className="h-[8000px]"></div>
       </ReactLenis>
