@@ -1,6 +1,10 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+// components
+import { Header } from "./Header";
+import { Button } from "./Button";
+
 export const Hero = () => {
   const { scrollY } = useScroll();
   const imgTopPosition = useTransform(scrollY, [0, 400], ["480px", "240px"]);
@@ -12,6 +16,7 @@ export const Hero = () => {
 
   return (
     <section className="h-screen xl:h-[1600px] overflow-x-clip relative">
+      <Header />
       <div className="container mx-auto h-full flex items-center xl:items-start">
         {/* text */}
         <motion.div
@@ -29,7 +34,7 @@ export const Hero = () => {
             Streamline tasks and manage your time effortlessly with our
             powerful, intuitive, all in one productivity platform.
           </p>
-          <button>Join today</button>
+          <Button btnText="Join today" />
         </motion.div>
         {/* image */}
         <motion.div
