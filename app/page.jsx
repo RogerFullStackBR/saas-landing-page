@@ -1,6 +1,7 @@
 // components
 import { Brands } from "@/components/Brands";
 import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Integrations } from "@/components/Integrations";
 import { Testimonials } from "@/components/Testimonials";
@@ -19,8 +20,7 @@ export default function Home() {
         <Integrations />
         <Testimonials />
         <Trial />
-        {/* temporaty div  */}
-        <div className="h-[8000px]"></div>
+        <Footer />
       </ReactLenis>
     </>
   );
